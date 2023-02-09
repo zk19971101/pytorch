@@ -26,7 +26,7 @@
     
 ## add_module(name: str, module: Optional['Module'])
     输入的模型可以是Module、Sequential
-## get_sub_module(target: str) -> Sequential or Submodel
+## get_submodule(target: str) -> Sequential or Submodel
 
 ## named_children() -> generator
     仅返回模型中子模型的网络层
