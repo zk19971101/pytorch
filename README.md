@@ -13,31 +13,31 @@
     
 ## register_parameter(self, name: str, param: Optional[Parameter])
     register_parameter在model中注册一个torch.nn.Parameter()，可以在model.parameters()和model.state_dict()显示，
-##get_parameter(target: str) -> tensor和requires_grad
-##named_parameters() -> generator
+## get_parameter(target: str) -> tensor和requires_grad
+## named_parameters() -> generator
     当不知道parameter的name时，可以通过named_parameters()对parameter的key和value进行索引,
     
-##register_buffer(name: str, tensor: Optional[Tensor], persistent: bool = True)
+## register_buffer(name: str, tensor: Optional[Tensor], persistent: bool = True)
     persistent为True时，buffer会在model.state_dict()中；反之则反。
     
-##get_buffer(target: str) -> tensor
-##named_buffers()-> generator
+## get_buffer(target: str) -> tensor
+## named_buffers()-> generator
     当不知道buffer的name时，可以通过named_buffer()对buffer的key和value进行索引,
     
-##add_module(name: str, module: Optional['Module'])
+## add_module(name: str, module: Optional['Module'])
     输入的模型可以是Module、Sequential
-##get_sub_module(target: str) -> Sequential or Submodel
+## get_sub_module(target: str) -> Sequential or Submodel
 
-##named_children() -> generator
+## named_children() -> generator
     仅返回模型中子模型的网络层
-##named_modules() -> generator
+## named_modules() -> generator
     返回整个模型中所有的网络层
    
-##register_forward_hook(hook) 
+## register_forward_hook(hook) 
     hook(module, input, output) -> None or modified output
     注册一个前向传播的钩子函数，当模型调用forward时，钩子函数会保存某一层的前向传播结果
     
-##register_backward_hook(hook)
+## register_backward_hook(hook)
     hook(module, input, output) -> None or modified output
     注册一个前向传播的钩子函数，当模型调用forward时，钩子函数会保存某一层的前向传播结果
    
