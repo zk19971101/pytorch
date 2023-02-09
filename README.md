@@ -19,6 +19,7 @@
     
 ##register_buffer(name: str, tensor: Optional[Tensor], persistent: bool = True)
     persistent为True时，buffer会在model.state_dict()中；反之则反。
+    
 ##get_buffer(target: str) -> tensor
 ##named_buffers()-> generator
     当不知道buffer的name时，可以通过named_buffer()对buffer的key和value进行索引,
