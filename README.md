@@ -26,11 +26,12 @@
 ##add_module(name: str, module: Optional['Module'])
     输入的模型可以是Module、Sequential
 ##get_sub_module(target: str) -> Sequential or Submodel
+
 ##named_children() -> generator
     仅返回模型中子模型的网络层
 ##named_modules() -> generator
     返回整个模型中所有的网络层
-    
+   
 ##register_forward_hook(hook) 
     hook(module, input, output) -> None or modified output
     注册一个前向传播的钩子函数，当模型调用forward时，钩子函数会保存某一层的前向传播结果
