@@ -17,7 +17,7 @@
 ##named_parameters() -> generator
     当不知道parameter的name时，可以通过named_parameters()对parameter的key和value进行索引,
     
-## register_buffer(name: str, tensor: Optional[Tensor], persistent: bool = True)
+##register_buffer(name: str, tensor: Optional[Tensor], persistent: bool = True)
     persistent为True时，buffer会在model.state_dict()中；反之则反。
 ##get_buffer(target: str) -> tensor
 ##named_buffers()-> generator
